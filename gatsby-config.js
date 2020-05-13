@@ -11,5 +11,16 @@ module.exports = {
   },
 
   /* Your site config here */
-  plugins: ["gatsby-plugin-emotion", "gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/pages/components/layout.js"),
+        },
+      },
+    },
+  ],
 }
