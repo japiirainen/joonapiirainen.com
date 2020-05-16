@@ -2,6 +2,7 @@ import React from "react"
 import { Global, css } from "@emotion/core"
 import { Helmet } from "react-helmet"
 import Header from "./header"
+import Footer from "./Footer"
 import useSiteMetadata from "../hooks/use-sitemetadata"
 
 const Layout = ({ children }) => {
@@ -22,12 +23,12 @@ const Layout = ({ children }) => {
 
           html,
           body {
+            background-color: #f5f6fa;            
             margin: 0;
             color: #555;
-            font-family: -apple-system, BlinkmacSystemFont, "Segoe UI", Roboto,
-              Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.4;
+            font-family: 'DM Mono', monospace;
+            font-size: 20px;
+            line-height: 1.5;
 
             /*remove margin for main div gatsby mounts to.*/
             > div {
@@ -72,6 +73,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
+      <Footer />
     </>
   )
 }

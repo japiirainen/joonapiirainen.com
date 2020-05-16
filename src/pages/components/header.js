@@ -24,14 +24,18 @@ const NavLink = styled(Link)`
 const Header = () => (
   <header
     css={css`
-      background: #eee;
+      background: #E6E9ED;
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
+
+      .jp {
+        font-size: 1.3rem;
+      }
     `}
   >
-    <NavLink to="/" fontWeight="bold">
+    <NavLink to="/" fontWeight="bold" className="jp">
       Joonapiirainen
     </NavLink>
     <nav

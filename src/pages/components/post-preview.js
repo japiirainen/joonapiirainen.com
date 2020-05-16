@@ -13,9 +13,13 @@ const PostPreview = ({ post }) => (
         :first-of-type {
             margin-top: 1rem;
         }
+
+        .blogTitle {
+            text-decoration: none;
+        }
     `}
 >
-<h3><Link to={post.slug}>{post.title}</Link></h3>
+<h2><Link to={post.slug}>{post.title}</Link></h2>
 <p>{post.excerpt}</p>
 <ReadLink to={post.slug}>Read this post &rarr;</ReadLink>
 </article>
