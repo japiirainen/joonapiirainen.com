@@ -12,12 +12,7 @@ function Footer() {
   return (
     <footer
     css={css`
-    position: absolute;
     text-align: center;
-    justify-content: center;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
     color: #ccc;
     font-size: 14px;
     `}

@@ -7,15 +7,19 @@ const PostPreview = ({ post }) => (
 <article
     css={css`
         border-bottom: 1px solid #ddd;
-        margin-top: 0.75rem;
+        margin-top: 1rem;
         padding-bottom: 1rem;
 
         :first-of-type {
-            margin-top: 1rem;
+            margin-top: 2rem;
+            
         }
 
-        .blogTitle {
-            text-decoration: none;
+        a {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            color: #222;
+            
         }
     `}
 >

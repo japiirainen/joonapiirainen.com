@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
             font-family: 'DM Mono', monospace;
             font-size: 20px;
             line-height: 1.5;
+            min-height: calc(100vh - 211px -58px);
 
             /*remove margin for main div gatsby mounts to.*/
             > div {

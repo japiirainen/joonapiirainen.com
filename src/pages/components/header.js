@@ -25,7 +25,7 @@ const Header = () => (
   <header
     css={css`
       background: #E6E9ED;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1.5px dashed #555;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
@@ -35,17 +35,16 @@ const Header = () => (
       }
     `}
   >
+    <i class="fas fa-icicles"></i>
     <NavLink to="/" fontWeight="bold" className="jp">
-      Joonapiirainen
+      joonapiirainen.com
     </NavLink>
     <nav
       css={css`
         margin-top: 0;
       `}
     >
-      <NavLink to="/" activeClassName="current-page">
-        Home
-      </NavLink>
+
       <NavLink to="/about/" activeClassName="current-page">
         About
       </NavLink>
