@@ -20,16 +20,22 @@ const Icons = () => {
         }
       `}
     >
-      <SocialLink to="instagram">
+      <SocialLink href="https://www.instagram.com/japiirainen/" target="_blank">
         <IgIcon />
       </SocialLink>
-      <SocialLink to="facebook">
+      <SocialLink
+        href="https://www.facebook.com/piirainenjoona/"
+        target="_blank"
+      >
         <FbIcon />
       </SocialLink>
-      <SocialLink>
+      <SocialLink href="https://github.com/japiirainen" target="_blank">
         <GhIcon />
       </SocialLink>
-      <SocialLink to="linkdein">
+      <SocialLink
+        href="https://www.linkedin.com/in/joona-piirainen-a026351a8/"
+        target="_blank"
+      >
         <LiIcon />
       </SocialLink>
     </div>

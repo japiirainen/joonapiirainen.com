@@ -11,6 +11,7 @@ export const query = graphql`
       frontmatter {
         title
         author
+        date
       }
       body
     }
@@ -20,13 +21,18 @@ export const query = graphql`
 const PostTemplate = ({ data: { mdx: post } }) => (
   <Layout>
     <h1>{post.frontmatter.title}</h1>
-    <p
+    <ul
       css={css`
         font-size: 0.75rem;
+
+        li {
+          list-style-type: square;
+        }
       `}
     >
-      post by {post.frontmatter.author}
-    </p>
+      <li>post by {post.frontmatter.author}</li>
+      <li>{post.frontmatter.date}</li>
+    </ul>
     <MDXRenderer>{post.body}</MDXRenderer>
     <ReadLink to="/">&larr;Back</ReadLink>
   </Layout>

@@ -1,7 +1,6 @@
 import styled from "@emotion/styled"
-import { Link } from "gatsby"
 
-const SocialLink = styled(Link)`
+const SocialLink = styled.a`
   color: #555;
   svg {
     margin: 5px;
