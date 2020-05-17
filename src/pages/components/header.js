@@ -24,7 +24,7 @@ const NavLink = styled(Link)`
 const Header = () => (
   <header
     css={css`
-      background: #E6E9ED;
+      background: #e6e9ed;
       border-bottom: 1.5px dashed #555;
       display: flex;
       justify-content: space-between;
@@ -32,6 +32,13 @@ const Header = () => (
 
       .jp {
         font-size: 1.3rem;
+
+        @media (max-width: 850px) {
+          font-size: 1rem;
+        }
+      }
+      .contact {
+        margin: 1rem;
       }
     `}
   >
@@ -44,11 +51,11 @@ const Header = () => (
         margin-top: 0;
       `}
     >
-
-      <NavLink to="/about/" activeClassName="current-page">
-        About
-      </NavLink>
-      <NavLink to="/contact/" activeClassName="current-page">
+      <NavLink
+        to="/contact/"
+        activeClassName="current-page"
+        className="contact"
+      >
         Contact
       </NavLink>
     </nav>
