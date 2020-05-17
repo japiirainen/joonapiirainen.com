@@ -54,6 +54,9 @@ const Layout = ({ children }) => {
               margin-top: 0.25rem;
             }
           }
+          h2 {
+            margin: 2.5rem auto 1.5rem auto;
+          }
         `}
       />
       <Helmet>
