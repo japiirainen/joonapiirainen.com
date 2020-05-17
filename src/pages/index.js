@@ -4,15 +4,16 @@ import PostPreview from "./components/post-preview"
 import usePosts from "./hooks/use-posts"
 
 export default () => {
-const posts = usePosts();
+  const posts = usePosts()
 
-return (
-  <Layout>
-    <h1>waveicons</h1>
-    <p>Welcome to my new minimalistic website! You can read my blog below (downarrow)</p>
-    {posts.map(post => (
-      <PostPreview key={post.slug} post={post} />
-    ))}
-  </Layout>
-)
+  return (
+    <Layout>
+      <h3>
+        Welcome to my new minimalistic website! You can read my blog below&darr;
+      </h3>
+      {posts.map(post => (
+        <PostPreview key={post.slug} post={post} />
+      ))}
+    </Layout>
+  )
 }
