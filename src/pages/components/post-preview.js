@@ -22,10 +22,10 @@ const PostPreview = ({ post }) => (
     `}
   >
     <h2>
-      <Link to={post.slug}>{post.title}</Link>
+      <Link to={post && post.slug}>{post && post.title}</Link>
     </h2>
-    <p>{post.excerpt}</p>
-    <ReadLink to={post.slug}>Read this post &rarr;</ReadLink>
+    <p>{post && post.excerpt}</p>
+    <ReadLink to={post && post.slug}>Read this post &rarr;</ReadLink>
   </article>
 )
 

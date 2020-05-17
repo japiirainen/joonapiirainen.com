@@ -3,11 +3,8 @@ import { Global, css } from "@emotion/core"
 import { Helmet } from "react-helmet"
 import Header from "./header"
 import Footer from "./Footer"
-import useSiteMetadata from "../hooks/use-sitemetadata"
 
 const Layout = ({ children }) => {
-  const { title, description } = useSiteMetadata()
-
   return (
     <>
       <Global
@@ -23,10 +20,10 @@ const Layout = ({ children }) => {
 
           html,
           body {
-            background-color: #f5f6fa;            
+            background-color: #f5f6fa;
             margin: 0;
             color: #555;
-            font-family: 'DM Mono', monospace;
+            font-family: "DM Mono", monospace;
             font-size: 20px;
             line-height: 1.5;
             min-height: calc(100vh - 211px -58px);
@@ -61,8 +58,8 @@ const Layout = ({ children }) => {
       />
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>Joonapiirainen</title>
+        <meta name="description" content="My new personal site." />
       </Helmet>
       <Header />
       <main
