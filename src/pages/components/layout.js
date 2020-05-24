@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
       <Global
         styles={css`
           * {
-            box-sizing: border-box;
             margin: 0;
           }
 
