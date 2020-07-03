@@ -33,6 +33,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
       <li>post by {post.frontmatter.author}</li>
       <li>{post.frontmatter.date}</li>
     </ul>
+
     <MDXRenderer>{post.body}</MDXRenderer>
     <ReadLink to="/">&larr;Back</ReadLink>
   </Layout>

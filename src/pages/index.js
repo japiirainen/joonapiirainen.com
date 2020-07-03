@@ -12,6 +12,7 @@ export const query = graphql`
           slug
           author
           date
+          blogpost
         }
         excerpt
       }
@@ -26,16 +27,20 @@ export default data => {
     slug: post.frontmatter.slug,
     author: post.frontmatter.author,
     excerpt: post.excerpt,
+    blogpost: post.frontmatter.blogpost,
   }))
 
   return (
     <Layout>
       <h3>
-        Welcome to my new minimalistic website! You can read my blog below&darr;
+        Welcome to my new minimalistic website!You can read my blog below &darr;
       </h3>
-      {posts.map(post => (
-        <PostPreview key={post.slug} post={post} />
-      ))}
+      {posts
+        .filter(post => post.blogpost)
+        .reverse()
+        .map(post => (
+          <PostPreview key={post.slug} post={post} />
+        ))}
     </Layout>
   )
 }

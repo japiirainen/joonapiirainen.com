@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
           html,
           body {
-            background-color: #f5f6fa;
+            background-color: #fff;
             margin: 0;
             color: #555;
             font-family: "DM Mono", monospace;
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
         css={css`
           margin: 2rem auto 4rem;
           max-width: 90vw;
-          width: 550px;
+          width: 600px;
         `}
       >
         {children}

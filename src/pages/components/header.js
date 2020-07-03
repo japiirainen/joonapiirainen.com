@@ -42,7 +42,7 @@ const Header = () => (
       }
     `}
   >
-    <i class="fas fa-icicles"></i>
+    <i className="fas fa-icicles"></i>
     <NavLink to="/" fontWeight="bold" className="jp">
       joonapiirainen.com
     </NavLink>
