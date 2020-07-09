@@ -22,10 +22,10 @@ const DarkModeToggle = () => {
                 useStyles={useCuteSwitchToggleStyles}
                 onClick={onToggle}
                 checked={darkMode.value}
-                color={toggled ? '#3a3f85' : '#faf796'}
+                color={!toggled ? '#3a3f85' : '#faf796'}
                 onChange={darkMode.toggle}
             >
-                {toggled ? <NightsStayIcon /> : <WbSunnyIcon />}
+                {!toggled ? <NightsStayIcon /> : <WbSunnyIcon />}
             </SwitchToggle>
         </div>
     )
