@@ -30,13 +30,13 @@ const Layout = ({ children }) => {
                             margin-top: 0;
                         }
                         body.light-mode {
-                          background-color: #fff
-                          color: #333;
-                          transition: background-color 0.3s ease;
-
-                          a {
+                            background-color: #fff;
                             color: #333;
-                          }
+                            transition: background-color 0.3s ease;
+
+                            a {
+                                color: #333;
+                            }
                         }
                         body.dark-mode {
                             background-color: #121214;
@@ -44,19 +44,16 @@ const Layout = ({ children }) => {
                             transition: background-color 0.3s ease;
 
                             a {
-                              color: #dfdfdf
+                                color: #dfdfdf;
                             }
-
                         }
-                        
-                        
+
                         h1,
                         h2,
                         h3,
                         h4,
                         h5,
                         h6 {
-                            
                             line-height: 1.1;
 
                             + * {
@@ -64,7 +61,6 @@ const Layout = ({ children }) => {
                             }
                         }
                         strong {
-                            
                         }
 
                         li {
