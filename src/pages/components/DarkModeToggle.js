@@ -13,6 +13,7 @@ const DarkModeToggle = () => {
         setToggled(!toggled)
         darkMode.toggle()
     }
+
     const gutterStyles = usePushingGutterStyles()
     return (
         <div className={gutterStyles.parent}>
@@ -22,10 +23,10 @@ const DarkModeToggle = () => {
                 useStyles={useCuteSwitchToggleStyles}
                 onClick={onToggle}
                 checked={darkMode.value}
-                color={!toggled ? '#3a3f85' : '#faf796'}
+                color={darkMode.value !== true ? '#3a3f85' : '#faf796'}
                 onChange={darkMode.toggle}
             >
-                {!toggled ? <NightsStayIcon /> : <WbSunnyIcon />}
+                {darkMode.value !== true ? <NightsStayIcon /> : <WbSunnyIcon />}
             </SwitchToggle>
         </div>
     )
