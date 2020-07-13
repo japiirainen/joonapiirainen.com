@@ -15,7 +15,14 @@ module.exports = {
         'gatsby-plugin-emotion',
         'gatsby-plugin-use-dark-mode',
         'gatsby-plugin-react-helmet',
-        `gatsby-plugin-material-ui`,
+        {
+            resolve: `gatsby-plugin-material-ui`,
+            options: {
+                stylesProvider: {
+                    injectFirst: true,
+                },
+            },
+        },
         {
             resolve: 'gatsby-plugin-mdx',
             options: {
